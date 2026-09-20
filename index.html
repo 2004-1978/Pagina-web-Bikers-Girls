@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bikers Girls · Accesorios de moto para mujeres</title>
+<meta name="description" content="Cascos, chaquetas, guantes y protección diseñados para mujeres que ruedan. Envíos a toda Colombia.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,600;6..96,800&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  color-scheme: dark;
+  --noche:#0B0710;
+  --noche-2:#140B1C;
+  --uva:#2E0F42;
+  --morado:#7A1FA8;
+  --magenta:#EC008C;
+  --rosa:#FF7FB2;
+  --rosa-claro:#FFD7E8;
+  --durazno:#FFB39B;
+  --blanco:#FFFFFF;
+  --humo:rgba(255,215,232,.62);
+  --linea:rgba(255,127,178,.22);
+  --display:"Bodoni Moda",Georgia,"Times New Roman",serif;
+  --texto:"Jost",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(74px + env(safe-area-inset-top,0px));-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation-duration:.001ms!important;transition-duration:.001ms!important}}
+body{
+  margin:0;
+  background:var(--noche);
+  color:var(--rosa-claro);
+  font-family:var(--texto);
+  font-weight:300;
+  font-size:17px;
+  line-height:1.6;
+  overflow-x:hidden;
+}
+img{max-width:100%;display:block}
+a{color:inherit}
+::selection{background:var(--magenta);color:#fff}
+:focus-visible{outline:2px solid var(--rosa);outline-offset:3px;border-radius:4px}
+
+.env{width:min(1180px,92vw);margin-inline:auto}
+
+/* ---------- navegación ---------- */
+.nav{
+  position:sticky;top:env(safe-area-inset-top,0px);z-index:60;
+  background:rgba(11,7,16,.82);
+  backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--linea);
+}
+.nav-in{display:flex;align-items:center;gap:26px;height:74px}
+.nav img{width:150px;flex:none}
+.nav-links{margin-left:auto;display:flex;gap:26px;align-items:center}
+.nav-links a{
+  text-decoration:none;font-size:14.5px;letter-spacing:.06em;color:var(--humo);
+  padding-bottom:3px;border-bottom:1px solid transparent;transition:color .2s,border-color .2s;
+}
+.nav-links a:hover{color:var(--blanco);border-bottom-color:var(--magenta)}
+.nav-wa{
+  display:inline-flex;align-items:center;gap:8px;text-decoration:none;
+  background:linear-gradient(120deg,var(--magenta),var(--morado));
+  color:#fff;padding:10px 18px;border-radius:999px;font-size:14.5px;font-weight:500;
+  box-shadow:0 8px 24px -10px var(--magenta);
+}
+.nav-wa svg{width:17px;height:17px;fill:currentColor}
+@media(max-width:860px){.nav-links a:not(.nav-wa){display:none}.nav img{width:120px}.nav-in{height:64px}}
+
+/* ---------- hero ---------- */
+.hero{position:relative;padding:clamp(56px,10vw,110px) 0 clamp(50px,7vw,86px);text-align:center;overflow:hidden}
+.hero::before{
+  content:"";position:absolute;inset:-30% -20% auto;height:150%;
+  background:
+    radial-gradient(48% 42% at 50% 22%, rgba(236,0,140,.30), transparent 70%),
+    radial-gradient(40% 40% at 16% 58%, rgba(122,31,168,.40), transparent 72%),
+    radial-gradient(34% 34% at 86% 44%, rgba(255,179,155,.16), transparent 70%);
+  filter:blur(6px);pointer-events:none;
+}
+.hero>*{position:relative}
+.hero-logo{width:min(760px,88vw);margin:0 auto;filter:drop-shadow(0 18px 46px rgba(236,0,140,.45))}
+.hero h1{
+  font-family:var(--display);font-weight:400;font-style:italic;
+  font-size:clamp(23px,3.4vw,38px);line-height:1.25;color:var(--blanco);
+  margin:30px auto 0;max-width:19ch;letter-spacing:.005em;
+}
+.hero p{max-width:56ch;margin:18px auto 0;color:var(--humo);font-size:clamp(15.5px,1.6vw,18px)}
+.cta-row{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;margin-top:34px}
+.btn{
+  display:inline-flex;align-items:center;gap:9px;text-decoration:none;cursor:pointer;
+  font-family:var(--texto);font-size:15.5px;font-weight:500;letter-spacing:.02em;
+  padding:14px 28px;border-radius:999px;border:1px solid transparent;transition:transform .18s,box-shadow .18s,background .2s,color .2s;
+}
+.btn-solid{background:linear-gradient(120deg,var(--magenta) 10%,var(--morado));color:#fff;box-shadow:0 14px 34px -14px var(--magenta)}
+.btn-solid:hover{transform:translateY(-2px);box-shadow:0 18px 40px -14px var(--magenta)}
+.btn-ghost{border-color:var(--linea);color:var(--rosa-claro);background:rgba(255,255,255,.03)}
+.btn-ghost:hover{border-color:var(--rosa);color:#fff}
+.btn svg{width:18px;height:18px;fill:currentColor}
+.hero-stats{display:flex;flex-wrap:wrap;justify-content:center;gap:clamp(26px,6vw,64px);margin-top:46px}
+.hero-stats div{min-width:120px}
+.hero-stats b{display:block;font-family:var(--display);font-size:30px;font-weight:600;color:var(--blanco)}
+.hero-stats span{font-size:13.5px;color:var(--humo);letter-spacing:.03em}
+
+/* rayo divisor: el motivo del logo */
+.bolt{display:block;width:100%;height:auto;color:var(--magenta);opacity:.85}
+
+/* ---------- catálogo ---------- */
+.sec{padding:clamp(60px,8vw,104px) 0}
+.sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-bottom:34px}
+.sec-head h2{
+  font-family:var(--display);font-weight:600;color:var(--blanco);
+  font-size:clamp(30px,4.6vw,50px);line-height:1.05;margin:0;letter-spacing:-.01em;
+}
+.sec-head p{margin:10px 0 0;max-width:46ch;color:var(--humo);font-size:16px}
+.filtros{display:flex;flex-wrap:wrap;gap:9px}
+.chip{
+  font-family:var(--texto);font-size:14px;color:var(--humo);cursor:pointer;
+  background:rgba(255,255,255,.04);border:1px solid var(--linea);
+  padding:9px 17px;border-radius:999px;transition:all .2s;
+}
+.chip:hover{color:#fff;border-color:var(--rosa)}
+.chip[aria-pressed="true"]{background:var(--magenta);border-color:var(--magenta);color:#fff}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(258px,1fr));gap:22px}
+.card{
+  position:relative;display:flex;flex-direction:column;
+  background:linear-gradient(180deg,rgba(46,15,66,.55),rgba(20,11,28,.5));
+  border:1px solid var(--linea);border-radius:20px;overflow:hidden;
+  transition:border-color .22s,transform .22s;
+}
+.card:hover{border-color:var(--rosa);transform:translateY(-3px)}
+.card-art{
+  position:relative;aspect-ratio:5/4;
+  background:
+    radial-gradient(70% 70% at 50% 34%, rgba(255,127,178,.20), transparent 70%),
+    linear-gradient(160deg,#3A1150,#1A0C26);
+  display:grid;place-items:center;
+}
+.card-art svg{width:74%;height:74%}
+.etiqueta{
+  position:absolute;top:12px;left:12px;z-index:2;
+  font-size:11.5px;letter-spacing:.09em;font-weight:500;
+  background:var(--blanco);color:#33063f;padding:5px 11px;border-radius:999px;
+}
+.fav{
+  position:absolute;top:10px;right:10px;z-index:2;cursor:pointer;
+  width:36px;height:36px;border-radius:50%;display:grid;place-items:center;
+  background:rgba(11,7,16,.55);border:1px solid var(--linea);color:var(--rosa);
+  backdrop-filter:blur(6px);transition:all .2s;
+}
+.fav:hover{color:#fff;border-color:var(--rosa)}
+.fav svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:1.8}
+.fav[aria-pressed="true"]{background:var(--magenta);border-color:var(--magenta);color:#fff}
+.fav[aria-pressed="true"] svg{fill:currentColor}
+.card-body{padding:18px 18px 20px;display:flex;flex-direction:column;flex:1;gap:7px}
+.card-cat{font-size:12px;letter-spacing:.11em;color:var(--rosa);opacity:.9}
+.card h3{margin:0;font-family:var(--display);font-weight:600;font-size:20.5px;line-height:1.22;color:var(--blanco)}
+.card .desc{margin:0;font-size:14.2px;line-height:1.55;color:var(--humo)}
+.card .pie{margin-top:auto;padding-top:14px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.precio{font-family:var(--display);font-size:23px;font-weight:600;color:var(--blanco);white-space:nowrap}
+.precio small{display:block;font-family:var(--texto);font-size:11.5px;font-weight:300;color:var(--humo);letter-spacing:.04em}
+.pedir{
+  display:inline-flex;align-items:center;gap:7px;text-decoration:none;
+  font-size:13.5px;font-weight:500;padding:10px 15px;border-radius:999px;
+  background:rgba(255,255,255,.05);border:1px solid var(--linea);color:var(--rosa-claro);
+  transition:all .2s;white-space:nowrap;
+}
+.pedir:hover{background:var(--magenta);border-color:var(--magenta);color:#fff}
+.pedir svg{width:15px;height:15px;fill:currentColor}
+.nota-precios{margin-top:26px;font-size:13.5px;color:var(--humo);opacity:.8}
+.vacio{padding:60px 0;text-align:center;color:var(--humo)}
+
+/* ---------- nosotras ---------- */
+.nosotras{background:linear-gradient(180deg,var(--noche),#180C22 40%,var(--noche))}
+.nos-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(30px,5vw,64px);align-items:center}
+@media(max-width:840px){.nos-grid{grid-template-columns:1fr}}
+.nos-texto h2{font-family:var(--display);font-weight:600;font-size:clamp(30px,4.6vw,50px);color:var(--blanco);margin:0 0 20px;line-height:1.06}
+.nos-texto p{margin:0 0 16px;max-width:60ch}
+.nos-texto .firma{font-family:var(--display);font-style:italic;color:var(--rosa);font-size:19px;margin-top:22px}
+.valores{display:grid;gap:14px}
+.valor{
+  display:flex;gap:16px;padding:20px 22px;border-radius:16px;
+  background:rgba(255,255,255,.035);border:1px solid var(--linea);
+}
+.valor .ico{flex:none;width:42px;height:42px;border-radius:12px;display:grid;place-items:center;
+  background:linear-gradient(140deg,var(--magenta),var(--morado));color:#fff}
+.valor .ico svg{width:21px;height:21px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.valor h3{margin:0 0 4px;font-family:var(--texto);font-weight:500;font-size:16.5px;color:var(--blanco);letter-spacing:.01em}
+.valor p{margin:0;font-size:14.4px;color:var(--humo);line-height:1.5}
+
+/* ---------- franja contacto ---------- */
+.franja{
+  background:linear-gradient(115deg,var(--magenta),var(--morado) 65%,var(--uva));
+  color:#fff;text-align:center;padding:clamp(48px,6vw,72px) 0;
+}
+.franja h2{font-family:var(--display);font-weight:600;font-size:clamp(27px,4vw,42px);margin:0 0 12px;line-height:1.12}
+.franja p{margin:0 auto 26px;max-width:52ch;color:rgba(255,255,255,.88)}
+.franja .btn-solid{background:#fff;color:#4A0B5E;box-shadow:0 14px 34px -16px rgba(0,0,0,.6)}
+
+/* ---------- pie ---------- */
+footer{background:#070409;border-top:1px solid var(--linea);padding:clamp(48px,6vw,70px) 0 0}
+.pie-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.1fr;gap:38px}
+@media(max-width:900px){.pie-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.pie-grid{grid-template-columns:1fr}}
+.pie-grid img{width:190px;margin-bottom:16px}
+.pie-grid h4{font-family:var(--texto);font-weight:500;font-size:14px;letter-spacing:.1em;color:var(--blanco);margin:0 0 15px}
+.pie-lista{list-style:none;margin:0;padding:0;display:grid;gap:10px;font-size:14.6px;color:var(--humo)}
+.pie-lista a{text-decoration:none;transition:color .2s}
+.pie-lista a:hover{color:var(--rosa)}
+.redes{display:flex;gap:11px;margin-top:6px}
+.red{
+  width:42px;height:42px;border-radius:12px;display:grid;place-items:center;
+  border:1px solid var(--linea);color:var(--rosa-claro);text-decoration:none;
+  transition:all .22s;background:rgba(255,255,255,.03);
+}
+.red svg{width:19px;height:19px;fill:currentColor}
+.red:hover{color:#fff;transform:translateY(-2px)}
+.red.ig:hover{background:linear-gradient(45deg,#F9A03F,#EC008C,#7A1FA8);border-color:transparent}
+.red.fb:hover{background:#1877F2;border-color:#1877F2}
+.red.tt:hover{background:#000;border-color:var(--rosa)}
+.red.wa:hover{background:#25D366;border-color:#25D366;color:#062a13}
+.legal{
+  margin-top:44px;border-top:1px solid var(--linea);padding:20px 0 26px;
+  display:flex;flex-wrap:wrap;gap:10px 22px;justify-content:space-between;
+  font-size:13px;color:var(--humo);opacity:.8;
+}
+.wa-flota{
+  position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:70;
+  width:56px;height:56px;border-radius:50%;display:grid;place-items:center;
+  background:#25D366;color:#06301a;box-shadow:0 12px 30px -8px rgba(37,211,102,.6);
+  text-decoration:none;transition:transform .2s;
+}
+.wa-flota:hover{transform:scale(1.07)}
+.wa-flota svg{width:28px;height:28px;fill:currentColor}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="env nav-in">
+    <a href="#inicio" aria-label="Bikers Girls, inicio"><img src="logo.png" alt="Bikers Girls"></a>
+    <nav class="nav-links">
+      <a href="#catalogo">Catálogo</a>
+      <a href="#nosotras">Nosotras</a>
+      <a href="#contacto">Contacto</a>
+      <a class="nav-wa" id="navWa" href="#" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><path d="M.06 24l1.69-6.16a11.87 11.87 0 01-1.6-5.95C.16 5.33 5.5 0 12.06 0a11.8 11.8 0 018.4 3.49 11.8 11.8 0 013.48 8.4c0 6.56-5.34 11.9-11.9 11.9a11.9 11.9 0 01-5.7-1.45L.06 24zm6.6-3.8c1.65.98 3.22 1.57 5.4 1.57 5.45 0 9.9-4.43 9.9-9.88 0-5.46-4.43-9.9-9.9-9.9-5.46 0-9.9 4.44-9.9 9.9 0 2.28.67 3.98 1.8 5.77l-.98 3.58 3.68-1.04zm11.36-5.66c-.08-.12-.27-.2-.56-.34-.29-.15-1.72-.85-1.99-.94-.26-.1-.46-.15-.65.14-.2.29-.74.94-.91 1.13-.17.2-.34.22-.63.08-.29-.15-1.23-.46-2.35-1.45-.87-.78-1.45-1.73-1.62-2.02-.17-.29-.02-.45.13-.6.13-.13.29-.34.43-.51.15-.17.2-.29.29-.48.1-.2.05-.36-.02-.51-.07-.14-.65-1.57-.9-2.15-.23-.56-.47-.48-.65-.49l-.55-.01c-.2 0-.51.07-.78.36-.26.29-1.01.99-1.01 2.42s1.04 2.8 1.18 3c.15.19 2.04 3.12 4.95 4.38.69.3 1.23.48 1.65.61.7.22 1.33.19 1.83.12.56-.09 1.72-.71 1.96-1.39.24-.68.24-1.26.17-1.38z"/></svg>
+        Escríbenos
+      </a>
+    </nav>
+  </div>
+</header>
+
+<main id="inicio">
+
+  <section class="hero">
+    <img class="hero-logo" src="logo.png" alt="Bikers Girls" fetchpriority="high">
+    <h1>La ruta también es nuestra, y el equipo por fin nos queda bien.</h1>
+    <p>Cascos, chaquetas, guantes y protección seleccionados talla por talla para mujeres que ruedan. Probado en el tráfico de Bogotá y en carretera abierta.</p>
+    <div class="cta-row">
+      <a class="btn btn-solid" href="#catalogo">Ver el catálogo</a>
+      <a class="btn btn-ghost" href="#nosotras">Conoce la marca</a>
+    </div>
+    <div class="hero-stats">
+      <div><b>+2.400</b><span>pedidos entregados</span></div>
+      <div><b>32</b><span>ciudades en Colombia</span></div>
+      <div><b>XS–XL</b><span>tallas pensadas para nosotras</span></div>
+    </div>
+  </section>
+
+  <svg class="bolt" viewBox="0 0 1200 60" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0 18 L180 18 L150 42 L360 30 L330 52 L600 34 L870 52 L840 30 L1050 42 L1020 18 L1200 18"
+          fill="none" stroke="currentColor" stroke-width="1.6" opacity=".55"/>
+    <path d="M600 34 L840 30 L870 52 Z M600 34 L360 30 L330 52 Z" fill="currentColor" opacity=".10"/>
+  </svg>
+
+  <section class="sec" id="catalogo">
+    <div class="env">
+      <div class="sec-head">
+        <div>
+          <h2>Catálogo</h2>
+          <p>Cada pieza la probamos nosotras antes de venderla. Si no nos sirve a nosotras, no entra.</p>
+        </div>
+        <div class="filtros" id="filtros" role="group" aria-label="Filtrar por categoría"></div>
+      </div>
+      <div class="grid" id="grid"></div>
+      <p class="nota-precios">Precios en pesos colombianos, IVA incluido. Envío gratis desde $250.000. Cambios de talla sin costo durante los primeros 8 días.</p>
+    </div>
+  </section>
+
+  <section class="sec nosotras" id="nosotras">
+    <div class="env nos-grid">
+      <div class="nos-texto">
+        <h2>Nosotras</h2>
+        <p>Bikers Girls nació en un taller del barrio Galerías, después de años comprando cascos talla S que igual quedaban grandes y chaquetas de hombre con las mangas dobladas tres veces. Somos moteras, y armamos la tienda que nos hacía falta.</p>
+        <p>Trabajamos con marcas certificadas y probamos cada referencia en ruta antes de subirla a la página: cómo aprieta el casco después de dos horas, si el guante deja usar el celular con lluvia, si la chaqueta sigue cómoda cuando el trancón no avanza.</p>
+        <p>No vendemos rosa por vender rosa. Vendemos equipo que protege de verdad, en tallas y hormas que sí existen para mujeres, y te acompañamos a elegirlo.</p>
+        <p class="firma">— Cata y Vale, fundadoras</p>
+      </div>
+      <div class="valores">
+        <div class="valor">
+          <span class="ico"><svg viewBox="0 0 24 24"><path d="M12 3l7 3v5.2c0 4.3-2.9 8.2-7 9.8-4.1-1.6-7-5.5-7-9.8V6l7-3z"/><path d="M9 12l2.2 2.2L15.5 10"/></svg></span>
+          <div><h3>Certificación primero</h3><p>Solo entran productos con norma DOT, ECE o ICONTEC vigente. Te mostramos la etiqueta antes de que compres.</p></div>
+        </div>
+        <div class="valor">
+          <span class="ico"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.6-7-10a7 7 0 0114 0c0 5.4-7 10-7 10z"/><circle cx="12" cy="11" r="2.6"/></svg></span>
+          <div><h3>Asesoría de talla por WhatsApp</h3><p>Nos mandas tus medidas y te decimos qué referencia te sirve. Sin adivinar y sin devoluciones eternas.</p></div>
+        </div>
+        <div class="valor">
+          <span class="ico"><svg viewBox="0 0 24 24"><path d="M3 7h11v9H3z"/><path d="M14 10h4l3 3v3h-7z"/><circle cx="7" cy="18" r="1.8"/><circle cx="17.5" cy="18" r="1.8"/></svg></span>
+          <div><h3>Envíos a toda Colombia</h3><p>Despachamos el mismo día en Bogotá y en 2 a 4 días hábiles al resto del país. Pagas contra entrega si quieres.</p></div>
+        </div>
+        <div class="valor">
+          <span class="ico"><svg viewBox="0 0 24 24"><path d="M12 4.5l2.3 4.7 5.2.8-3.8 3.6.9 5.1-4.6-2.4-4.6 2.4.9-5.1L4.5 10l5.2-.8z"/></svg></span>
+          <div><h3>Comunidad que rueda junta</h3><p>Rodadas mensuales, taller de mecánica básica y un grupo donde resolvemos dudas entre todas.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="franja" id="contacto">
+    <div class="env">
+      <h2>¿Dudas con la talla o el modelo?</h2>
+      <p>Escríbenos por WhatsApp con tu estatura, tu talla de casco actual y el tipo de moto. Te respondemos con una recomendación concreta, no con un catálogo.</p>
+      <a class="btn btn-solid" id="franjaWa" href="#" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><path d="M.06 24l1.69-6.16a11.87 11.87 0 01-1.6-5.95C.16 5.33 5.5 0 12.06 0a11.8 11.8 0 018.4 3.49 11.8 11.8 0 013.48 8.4c0 6.56-5.34 11.9-11.9 11.9a11.9 11.9 0 01-5.7-1.45L.06 24zm6.6-3.8c1.65.98 3.22 1.57 5.4 1.57 5.45 0 9.9-4.43 9.9-9.88 0-5.46-4.43-9.9-9.9-9.9-5.46 0-9.9 4.44-9.9 9.9 0 2.28.67 3.98 1.8 5.77l-.98 3.58 3.68-1.04zm11.36-5.66c-.08-.12-.27-.2-.56-.34-.29-.15-1.72-.85-1.99-.94-.26-.1-.46-.15-.65.14-.2.29-.74.94-.91 1.13-.17.2-.34.22-.63.08-.29-.15-1.23-.46-2.35-1.45-.87-.78-1.45-1.73-1.62-2.02-.17-.29-.02-.45.13-.6.13-.13.29-.34.43-.51.15-.17.2-.29.29-.48.1-.2.05-.36-.02-.51-.07-.14-.65-1.57-.9-2.15-.23-.56-.47-.48-.65-.49l-.55-.01c-.2 0-.51.07-.78.36-.26.29-1.01.99-1.01 2.42s1.04 2.8 1.18 3c.15.19 2.04 3.12 4.95 4.38.69.3 1.23.48 1.65.61.7.22 1.33.19 1.83.12.56-.09 1.72-.71 1.96-1.39.24-.68.24-1.26.17-1.38z"/></svg>
+        Hablar con una asesora
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="env">
+    <div class="pie-grid">
+      <div>
+        <img src="logo.png" alt="Bikers Girls">
+        <p style="font-size:14.6px;color:var(--humo);margin:0 0 18px;max-width:34ch">Accesorios y protección de moto diseñados para mujeres. Bogotá, Colombia.</p>
+        <div class="redes">
+          <a class="red ig" id="rIg" href="#" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.07 1.2.05 1.8.25 2.2.42.6.22 1 .48 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c0 1.2-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2 0-1.8-.2-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c0-1.2.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4C8.4 2.2 8.8 2.2 12 2.2zm0 1.8c-3.1 0-3.5 0-4.8.07-1 .05-1.6.22-1.9.35-.5.2-.8.4-1.2.7-.3.3-.5.7-.7 1.2-.1.3-.3.9-.35 1.9C3 9.5 3 9.9 3 13s0 3.5.07 4.8c.05 1 .22 1.6.35 1.9.2.5.4.8.7 1.2.3.3.7.5 1.2.7.3.1.9.3 1.9.35 1.3.07 1.7.07 4.8.07s3.5 0 4.8-.07c1-.05 1.6-.22 1.9-.35.5-.2.8-.4 1.2-.7.3-.3.5-.7.7-1.2.1-.3.3-.9.35-1.9.07-1.3.07-1.7.07-4.8s0-3.5-.07-4.8c-.05-1-.22-1.6-.35-1.9-.2-.5-.4-.8-.7-1.2-.3-.3-.7-.5-1.2-.7-.3-.1-.9-.3-1.9-.35C15.5 4 15.1 4 12 4z"/><path d="M12 7.1a4.9 4.9 0 100 9.8 4.9 4.9 0 000-9.8zm0 8.1a3.2 3.2 0 110-6.4 3.2 3.2 0 010 6.4z"/><circle cx="17.1" cy="6.9" r="1.2"/></svg>
+          </a>
+          <a class="red fb" id="rFb" href="#" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg viewBox="0 0 24 24"><path d="M22 12a10 10 0 10-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.4v7A10 10 0 0022 12z"/></svg>
+          </a>
+          <a class="red tt" id="rTt" href="#" target="_blank" rel="noopener" aria-label="TikTok">
+            <svg viewBox="0 0 24 24"><path d="M16.6 2h-3.1v13.3a2.7 2.7 0 11-2.1-2.6V9.5a6 6 0 105.2 5.9V8.9a7 7 0 004 1.3V7a4.1 4.1 0 01-4-4z"/></svg>
+          </a>
+          <a class="red wa" id="rWa" href="#" target="_blank" rel="noopener" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24"><path d="M.06 24l1.69-6.16a11.87 11.87 0 01-1.6-5.95C.16 5.33 5.5 0 12.06 0a11.8 11.8 0 018.4 3.49 11.8 11.8 0 013.48 8.4c0 6.56-5.34 11.9-11.9 11.9a11.9 11.9 0 01-5.7-1.45L.06 24zm6.6-3.8c1.65.98 3.22 1.57 5.4 1.57 5.45 0 9.9-4.43 9.9-9.88 0-5.46-4.43-9.9-9.9-9.9-5.46 0-9.9 4.44-9.9 9.9 0 2.28.67 3.98 1.8 5.77l-.98 3.58 3.68-1.04zm11.36-5.66c-.08-.12-.27-.2-.56-.34-.29-.15-1.72-.85-1.99-.94-.26-.1-.46-.15-.65.14-.2.29-.74.94-.91 1.13-.17.2-.34.22-.63.08-.29-.15-1.23-.46-2.35-1.45-.87-.78-1.45-1.73-1.62-2.02-.17-.29-.02-.45.13-.6.13-.13.29-.34.43-.51.15-.17.2-.29.29-.48.1-.2.05-.36-.02-.51-.07-.14-.65-1.57-.9-2.15-.23-.56-.47-.48-.65-.49l-.55-.01c-.2 0-.51.07-.78.36-.26.29-1.01.99-1.01 2.42s1.04 2.8 1.18 3c.15.19 2.04 3.12 4.95 4.38.69.3 1.23.48 1.65.61.7.22 1.33.19 1.83.12.56-.09 1.72-.71 1.96-1.39.24-.68.24-1.26.17-1.38z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <h4>Tienda</h4>
+        <ul class="pie-lista">
+          <li><a href="#catalogo">Cascos</a></li>
+          <li><a href="#catalogo">Ropa de ruta</a></li>
+          <li><a href="#catalogo">Protección</a></li>
+          <li><a href="#catalogo">Accesorios</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Ayuda</h4>
+        <ul class="pie-lista">
+          <li><a href="#contacto">Guía de tallas</a></li>
+          <li><a href="#contacto">Envíos y entregas</a></li>
+          <li><a href="#contacto">Cambios y garantía</a></li>
+          <li><a href="#nosotras">Sobre la marca</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Contacto</h4>
+        <ul class="pie-lista" id="pieContacto"></ul>
+      </div>
+    </div>
+
+    <div class="legal">
+      <span id="legalLinea"></span>
+      <span>Precios sujetos a cambio sin previo aviso · Imágenes de referencia</span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-flota" id="waFlota" href="#" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M.06 24l1.69-6.16a11.87 11.87 0 01-1.6-5.95C.16 5.33 5.5 0 12.06 0a11.8 11.8 0 018.4 3.49 11.8 11.8 0 013.48 8.4c0 6.56-5.34 11.9-11.9 11.9a11.9 11.9 0 01-5.7-1.45L.06 24zm6.6-3.8c1.65.98 3.22 1.57 5.4 1.57 5.45 0 9.9-4.43 9.9-9.88 0-5.46-4.43-9.9-9.9-9.9-5.46 0-9.9 4.44-9.9 9.9 0 2.28.67 3.98 1.8 5.77l-.98 3.58 3.68-1.04zm11.36-5.66c-.08-.12-.27-.2-.56-.34-.29-.15-1.72-.85-1.99-.94-.26-.1-.46-.15-.65.14-.2.29-.74.94-.91 1.13-.17.2-.34.22-.63.08-.29-.15-1.23-.46-2.35-1.45-.87-.78-1.45-1.73-1.62-2.02-.17-.29-.02-.45.13-.6.13-.13.29-.34.43-.51.15-.17.2-.29.29-.48.1-.2.05-.36-.02-.51-.07-.14-.65-1.57-.9-2.15-.23-.56-.47-.48-.65-.49l-.55-.01c-.2 0-.51.07-.78.36-.26.29-1.01.99-1.01 2.42s1.04 2.8 1.18 3c.15.19 2.04 3.12 4.95 4.38.69.3 1.23.48 1.65.61.7.22 1.33.19 1.83.12.56-.09 1.72-.71 1.96-1.39.24-.68.24-1.26.17-1.38z"/></svg>
+</a>
+
+<script>
+/* ============================================================
+   1) DATOS DE TU NEGOCIO — cambia solo esto
+   ============================================================ */
+const CONFIG = {
+  whatsapp: "573000000000",          // tu número con indicativo, sin + ni espacios
+  instagram: "https://instagram.com/bikersgirls",
+  facebook:  "https://facebook.com/bikersgirls",
+  tiktok:    "https://tiktok.com/@bikersgirls",
+  correo:    "hola@bikersgirls.co",
+  telefono:  "+57 300 000 0000",
+  direccion: "Cra. 24 #53-15, Galerías",
+  ciudad:    "Bogotá, Colombia",
+  horario:   "Lun a sáb · 9:00 a.m. – 7:00 p.m.",
+  nit:       "NIT 901.000.000-1"
+};
+
+/* ============================================================
+   2) PRODUCTOS — precios de referencia del mercado colombiano.
+      Reemplázalos por los tuyos reales.
+   ============================================================ */
+const PRODUCTOS = [
+  {n:"Casco integral Nébula",      cat:"Cascos",     p:489900, e:"Más vendido", d:"Fibra reforzada, visor antirrayas y forro desmontable lavable. Certificado DOT y ECE 22.06.", art:"integral"},
+  {n:"Casco abierto Bubble Rosé",  cat:"Cascos",     p:329900, e:"",            d:"Estilo jet con visor burbuja rosado. Liviano (1.150 g) para ciudad y trayectos cortos.", art:"jet"},
+  {n:"Chaqueta impermeable Ruta",  cat:"Ropa",       p:419900, e:"",            d:"Corte femenino con ajuste en cintura, protecciones CE en hombros y codos, membrana impermeable.", art:"chaqueta"},
+  {n:"Guantes de cuero Cruz",      cat:"Ropa",       p:139900, e:"",            d:"Cuero de cabra con nudillos reforzados y dedos táctiles. Tallas XS a L.", art:"guantes"},
+  {n:"Botas media caña Ónix",      cat:"Ropa",       p:309900, e:"",            d:"Cuero graso con refuerzo en tobillo, suela antideslizante y cierre lateral. Hormas 35 a 40.", art:"botas"},
+  {n:"Pantalón cargo con rodilleras", cat:"Ropa",    p:289900, e:"Nuevo",       d:"Tejido elástico resistente a la abrasión con protecciones extraíbles en rodillas y cadera.", art:"pantalon"},
+  {n:"Kit de protecciones Escudo", cat:"Protección", p:129900, e:"",            d:"Rodilleras y coderas nivel 1 con correas ajustables. Se usan debajo de la ropa.", art:"proteccion"},
+  {n:"Gafas antiempañante Neón",   cat:"Protección", p:89900,  e:"",            d:"Lente policarbonato UV400 con espuma sellante y banda elástica antideslizante.", art:"gafas"},
+  {n:"Balaclava térmica Seda",     cat:"Protección", p:39900,  e:"",            d:"Tejido transpirable que evita el roce del casco y recoge el cabello largo sin apretar.", art:"balaclava"},
+  {n:"Morral impermeable 22 L",    cat:"Accesorios", p:189900, e:"",            d:"Cierre enrollable 100% impermeable, espalda ventilada y banda reflectiva trasera.", art:"morral"},
+  {n:"Soporte de celular Ancla",   cat:"Accesorios", p:99900,  e:"",            d:"Agarre de aluminio con amortiguador antivibración. Se instala en manubrio o espejo.", art:"soporte"},
+  {n:"Impermeable dos piezas",     cat:"Accesorios", p:159900, e:"",            d:"Chaqueta y pantalón sellados, se guardan en su propia bolsa del tamaño de una cartuchera.", art:"impermeable"}
+];
+
+/* ============================================================
+   3) Ilustraciones (SVG dibujado, sin imágenes externas)
+   ============================================================ */
+const P = '#FF7FB2', W = '#FFE4F0', M = '#EC008C';
+const S = (inner) => `<svg viewBox="0 0 200 165" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${inner}</svg>`;
+const ART = {
+  integral: S(`
+    <path d="M22 96a78 72 0 0 1 156 0v18a16 16 0 0 1-16 16h-48l-9 12H52a30 30 0 0 1-30-30z" stroke="${P}" stroke-width="3.4"/>
+    <path d="M34 84q26-26 66-26v42q-40 4-64-4z" fill="${M}" fill-opacity=".30" stroke="${W}" stroke-width="2.6"/>
+    <path d="M30 104h56a12 12 0 0 1 12 12v14" stroke="${P}" stroke-width="2.6" opacity=".8"/>
+    <path d="M140 44l20 12M146 34l18 11" stroke="${W}" stroke-width="2.6" opacity=".75"/>`),
+  jet: S(`
+    <path d="M36 100a72 66 0 0 1 144 0v10a18 18 0 0 1-18 18H62a26 26 0 0 1-26-26z" stroke="${P}" stroke-width="3.4"/>
+    <path d="M40 60q-26 26-18 58c2 8 8 10 16 8" stroke="${W}" stroke-width="2.8" fill="${M}" fill-opacity=".18"/>
+    <circle cx="126" cy="98" r="19" stroke="${W}" stroke-width="2.6" opacity=".8"/>
+    <path d="M118 128l6 18M140 126l4 20" stroke="${P}" stroke-width="2.6" opacity=".7"/>`),
+  chaqueta: S(`
+    <path d="M74 26L48 42 34 88l22 8-4 58h96l-4-58 22-8-14-46-26-16z" stroke="${P}" stroke-width="3.4"/>
+    <path d="M74 26l26 26 26-26" stroke="${W}" stroke-width="2.8"/>
+    <path d="M100 52v102" stroke="${M}" stroke-width="3.2"/>
+    <path d="M60 104h22M140 104h-22" stroke="${W}" stroke-width="2.4" opacity=".7"/>`),
+  guantes: S(`
+    <rect x="64" y="42" width="74" height="76" rx="22" stroke="${P}" stroke-width="3.4"/>
+    <rect x="70" y="14" width="15" height="34" rx="7.5" stroke="${P}" stroke-width="3"/>
+    <rect x="89" y="8" width="15" height="40" rx="7.5" stroke="${P}" stroke-width="3"/>
+    <rect x="108" y="12" width="15" height="36" rx="7.5" stroke="${P}" stroke-width="3"/>
+    <rect x="127" y="22" width="14" height="28" rx="7" stroke="${P}" stroke-width="3"/>
+    <path d="M64 74L44 84a10 10 0 0 0 4 19l18 6" stroke="${P}" stroke-width="3"/>
+    <rect x="58" y="114" width="86" height="34" rx="12" stroke="${W}" stroke-width="2.8" fill="${M}" fill-opacity=".18"/>
+    <circle cx="86" cy="68" r="5" fill="${W}" opacity=".8"/><circle cx="104" cy="64" r="5" fill="${W}" opacity=".8"/><circle cx="122" cy="68" r="5" fill="${W}" opacity=".8"/>`),
+  botas: S(`
+    <path d="M70 16h44v88l44 20a14 14 0 0 1 8 13v13H70z" stroke="${P}" stroke-width="3.4"/>
+    <path d="M70 36h44M70 56h44M70 76h44" stroke="${W}" stroke-width="2.4" opacity=".65"/>
+    <path d="M70 128h96" stroke="${M}" stroke-width="3"/>
+    <path d="M118 108l22 10" stroke="${W}" stroke-width="2.6"/>`),
+  pantalon: S(`
+    <path d="M62 14h76l6 40-8 100h-28l-8-72-8 72H64l-8-100z" stroke="${P}" stroke-width="3.4"/>
+    <path d="M62 34h76" stroke="${W}" stroke-width="2.6"/>
+    <ellipse cx="78" cy="88" rx="15" ry="19" stroke="${W}" stroke-width="2.6" fill="${M}" fill-opacity=".22"/>
+    <ellipse cx="124" cy="88" rx="15" ry="19" stroke="${W}" stroke-width="2.6" fill="${M}" fill-opacity=".22"/>`),
+  proteccion: S(`
+    <path d="M100 16q40 0 46 30l6 56q4 36-52 42-56-6-52-42l6-56q6-30 46-30z" stroke="${P}" stroke-width="3.4" fill="${M}" fill-opacity=".14"/>
+    <path d="M56 52H30M144 52h26M56 104H30M144 104h26" stroke="${W}" stroke-width="3"/>
+    <path d="M100 42v56M74 70h52" stroke="${W}" stroke-width="2.6" opacity=".7"/>`),
+  gafas: S(`
+    <path d="M26 58q74-26 148 0l-8 44q-66 22-132 0z" stroke="${P}" stroke-width="3.4" fill="${M}" fill-opacity=".20"/>
+    <path d="M36 66q64-20 128 0l-6 30q-58 18-116 0z" stroke="${W}" stroke-width="2.4" opacity=".75"/>
+    <path d="M26 70L6 84M174 70l20 14" stroke="${P}" stroke-width="3"/>
+    <path d="M90 62v40" stroke="${W}" stroke-width="2" opacity=".5"/>`),
+  balaclava: S(`
+    <path d="M100 12a54 54 0 0 1 54 54v18q0 26-20 38v34H66v-34q-20-12-20-38V66a54 54 0 0 1 54-54z" stroke="${P}" stroke-width="3.4"/>
+    <ellipse cx="100" cy="74" rx="40" ry="20" stroke="${W}" stroke-width="2.8" fill="${M}" fill-opacity=".22"/>
+    <path d="M66 118h68" stroke="${W}" stroke-width="2.4" opacity=".6"/>`),
+  morral: S(`
+    <rect x="50" y="46" width="100" height="106" rx="18" stroke="${P}" stroke-width="3.4"/>
+    <path d="M50 70V60a18 18 0 0 1 18-18h64a18 18 0 0 1 18 18v10" stroke="${W}" stroke-width="2.8"/>
+    <path d="M62 42q6-26 38-26t38 26" stroke="${P}" stroke-width="3"/>
+    <rect x="80" y="86" width="40" height="26" rx="8" stroke="${W}" stroke-width="2.6" fill="${M}" fill-opacity=".22"/>
+    <path d="M62 132h76" stroke="${M}" stroke-width="3.2"/>`),
+  soporte: S(`
+    <rect x="66" y="16" width="68" height="106" rx="10" stroke="${P}" stroke-width="3.4" fill="${M}" fill-opacity=".16"/>
+    <path d="M52 34h14M134 34h14M52 104h14M134 104h14" stroke="${W}" stroke-width="3.4"/>
+    <path d="M100 122v14" stroke="${P}" stroke-width="3"/>
+    <circle cx="100" cy="144" r="12" stroke="${W}" stroke-width="2.8"/>
+    <path d="M30 156h140" stroke="${P}" stroke-width="3" opacity=".6"/>`),
+  impermeable: S(`
+    <path d="M70 22L48 36l-10 40 18 6-4 44h56l-4-44 18-6-10-40-22-14z" stroke="${P}" stroke-width="3.2"/>
+    <path d="M70 22l18 18 18-18" stroke="${W}" stroke-width="2.6"/>
+    <path d="M122 92h48l6 22-6 48h-48l6-48z" stroke="${P}" stroke-width="3.2" fill="${M}" fill-opacity=".16"/>
+    <path d="M146 114v48" stroke="${W}" stroke-width="2.4" opacity=".7"/>`)
+};
+
+/* ============================================================
+   4) Render
+   ============================================================ */
+const cop = n => "$" + n.toLocaleString("es-CO");
+const wa = txt => `https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(txt)}`;
+const $ = s => document.querySelector(s);
+
+/* favoritos guardados en este navegador */
+const FAV_KEY = "bg_favoritos";
+let favs = [];
+try { favs = JSON.parse(localStorage.getItem(FAV_KEY) || "[]"); } catch(e) { favs = []; }
+const guardarFavs = () => { try { localStorage.setItem(FAV_KEY, JSON.stringify(favs)); } catch(e){} };
+
+const CATS = ["Todo", ...new Set(PRODUCTOS.map(p => p.cat))];
+let activa = "Todo";
+
+function pintarFiltros(){
+  $("#filtros").innerHTML = CATS.map(c =>
+    `<button class="chip" data-cat="${c}" aria-pressed="${c===activa}">${c}</button>`).join("");
+  $("#filtros").querySelectorAll(".chip").forEach(b =>
+    b.addEventListener("click", () => { activa = b.dataset.cat; pintarFiltros(); pintarGrid(); }));
+}
+
+function pintarGrid(){
+  const lista = PRODUCTOS.filter(p => activa === "Todo" || p.cat === activa);
+  if(!lista.length){ $("#grid").innerHTML = `<p class="vacio">Todavía no hay productos en esta categoría. Escríbenos y te conseguimos lo que buscas.</p>`; return; }
+  $("#grid").innerHTML = lista.map(p => `
+    <article class="card">
+      <div class="card-art">
+        ${p.e ? `<span class="etiqueta">${p.e}</span>` : ""}
+        <button class="fav" data-n="${p.n}" aria-pressed="${favs.includes(p.n)}" aria-label="Guardar ${p.n}">
+          <svg viewBox="0 0 24 24"><path d="M12 20.3l-1.5-1.3C5.4 14.4 2 11.4 2 7.8 2 5 4.2 2.8 7 2.8c1.6 0 3.1.7 4 1.9.9-1.2 2.4-1.9 4-1.9 2.8 0 5 2.2 5 5 0 3.6-3.4 6.6-8.5 11.2z"/></svg>
+        </button>
+        ${ART[p.art] || ""}
+      </div>
+      <div class="card-body">
+        <span class="card-cat">${p.cat}</span>
+        <h3>${p.n}</h3>
+        <p class="desc">${p.d}</p>
+        <div class="pie">
+          <span class="precio">${cop(p.p)}<small>o 3 cuotas de ${cop(Math.round(p.p/3/100)*100)}</small></span>
+          <a class="pedir" href="${wa(`Hola Bikers Girls 👋 Me interesa ${p.n} (${cop(p.p)}). ¿Qué tallas tienen disponibles?`)}" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24"><path d="M.06 24l1.69-6.16a11.87 11.87 0 01-1.6-5.95C.16 5.33 5.5 0 12.06 0a11.8 11.8 0 018.4 3.49 11.8 11.8 0 013.48 8.4c0 6.56-5.34 11.9-11.9 11.9a11.9 11.9 0 01-5.7-1.45L.06 24zm6.6-3.8c1.65.98 3.22 1.57 5.4 1.57 5.45 0 9.9-4.43 9.9-9.88 0-5.46-4.43-9.9-9.9-9.9-5.46 0-9.9 4.44-9.9 9.9 0 2.28.67 3.98 1.8 5.77l-.98 3.58 3.68-1.04z"/></svg>
+            Pedir
+          </a>
+        </div>
+      </div>
+    </article>`).join("");
+
+  $("#grid").querySelectorAll(".fav").forEach(b => b.addEventListener("click", () => {
+    const n = b.dataset.n;
+    favs.includes(n) ? favs.splice(favs.indexOf(n),1) : favs.push(n);
+    b.setAttribute("aria-pressed", favs.includes(n));
+    guardarFavs();
+  }));
+}
+
+function pintarContacto(){
+  const l = wa("Hola Bikers Girls 👋 Quiero asesoría para elegir mi equipo.");
+  ["#navWa","#franjaWa","#waFlota","#rWa"].forEach(s => $(s).href = l);
+  $("#rIg").href = CONFIG.instagram;
+  $("#rFb").href = CONFIG.facebook;
+  $("#rTt").href = CONFIG.tiktok;
+  $("#pieContacto").innerHTML = `
+    <li><a href="${l}" target="_blank" rel="noopener">WhatsApp ${CONFIG.telefono}</a></li>
+    <li><a href="mailto:${CONFIG.correo}">${CONFIG.correo}</a></li>
+    <li>${CONFIG.direccion}<br>${CONFIG.ciudad}</li>
+    <li>${CONFIG.horario}</li>`;
+  $("#legalLinea").textContent = `© ${new Date().getFullYear()} Bikers Girls · ${CONFIG.nit} · ${CONFIG.ciudad}`;
+}
+
+pintarFiltros(); pintarGrid(); pintarContacto();
+</script>
+</body>
+</html>
